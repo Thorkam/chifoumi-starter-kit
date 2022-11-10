@@ -13,7 +13,7 @@ rejouer.style.display = "none"
 
 joueur1.addEventListener("click", (event) => {
     let random1=Math.floor(Math.random()*chifoumi.length);
-    joueur1.style.backgroundImage ="url(./images-pfc/"+chifoumi[random1]+".jpg)"; //`url(${./images-pfc/chifoumi[random1]})`;
+    joueur1.style.backgroundImage =`url(./images-pfc/${chifoumi[random1]}.jpg)`;
     joueur1.style.pointerEvents="none";
    randomLeft=chifoumi[random1];
    verifEgalite();
@@ -21,7 +21,7 @@ joueur1.addEventListener("click", (event) => {
 
 joueur2.addEventListener("click", (event) => {
     let random2=Math.floor(Math.random()*chifoumi.length);
-    joueur2.style.backgroundImage ="url(./images-pfc/" +chifoumi[random2]+".jpg)";
+    joueur2.style.backgroundImage =`url(./images-pfc/${chifoumi[random2]}.jpg)`;
     joueur2.style.pointerEvents="none";
     randomRight =chifoumi[random2];
     verifEgalite();
